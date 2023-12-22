@@ -22,7 +22,9 @@ export const Layout = () => {
         setIsSideBarOpen={setIsSideBarOpen}
       />
       <Box>
-        <NavBar/>
+        <NavBar 
+        isSideBarOpen={isSideBarOpen}
+        setIsSideBarOpen={setIsSideBarOpen}/>
         <Outlet />
       </Box>
     </Box>
