@@ -30,7 +30,7 @@ export const NavBar = () => {
         boxShadown: "none",
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-beetween" }}>
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         {/*Left side */}
         <FlexBetween>
           <IconButton onClick={() => console.log("open sidebar")}>
