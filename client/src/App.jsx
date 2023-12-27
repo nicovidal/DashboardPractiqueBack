@@ -8,6 +8,7 @@ import { Dashboard } from "./scenes/dashboard/index.jsx";
 import {Layout} from "./scenes/layout/index.jsx"
 import {Products} from "./scenes/products/index.jsx"
 import {Customers} from "./scenes/customers/index.jsx"
+import {Transactions} from "./scenes/transactions/index.jsx"
 
 export const App = () => {
   const mode =useSelector((state)=>state.global.mode);
@@ -24,6 +25,7 @@ export const App = () => {
             <Route path="/dashboard"element={<Dashboard />}/>  
             <Route path="/products"element={<Products />}/>  
             <Route path="/customers"element={<Customers />}/>  
+            <Route path="/transactions"element={<Transactions />}/>  
           </Route>
         </Routes>
         </ThemeProvider>
