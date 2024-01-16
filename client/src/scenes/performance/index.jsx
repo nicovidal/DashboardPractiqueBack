@@ -1,4 +1,4 @@
-import {useGetuserPerformanceQuery} from "../../state/api"
+import {useGetUserPerformanceQuery} from "../../state/api"
 import { Header } from "../../components/Header";
 import {CustomColumnMenu} from "../../components/DataGridCustomColumnMenu.jsx"
 import { DataGrid } from "@mui/x-data-grid";
@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 export const Performance = () => {
     const theme = useTheme();
     const userId = useSelector((state) => state.global.userId);
-    const { data, isLoading } = useGetuserPerformanceQuery(userId);
+    const { data, isLoading } = useGetUserPerformanceQuery(userId);
   
     const columns = [
       {
