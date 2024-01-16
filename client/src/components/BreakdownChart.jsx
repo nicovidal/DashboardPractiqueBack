@@ -4,6 +4,7 @@ import { useGetSalesQuery } from "../state/api";
 
 export const BreakdownChart = ({ isDashboard = false}) => {
   const { data, isLoading } = useGetSalesQuery();
+  console.log(data);
   const theme = useTheme();
 
   if (!data || isLoading) return "Loading...";
@@ -25,7 +26,7 @@ export const BreakdownChart = ({ isDashboard = false}) => {
 
   return (
     <Box
-      height={isDashboard ? "100px" : "100%"}
+      height={ isDashboard ? "100px" : "100%"}
       width={undefined}
       minHeight={isDashboard ? "325px" : undefined}
       minWidth={isDashboard ? "325px" : undefined}

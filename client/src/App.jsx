@@ -14,6 +14,7 @@ import { Overview } from "./scenes/overview/index.jsx";
 import { Daily } from "./scenes/daily/index.jsx";
 import { Montly } from "./scenes/montly/index.jsx";
 import { Breakdown } from "./scenes/breakdown/index.jsx";
+import { Admin } from "./scenes/admin/index.jsx";
 
 export const App = () => {
   const mode = useSelector((state) => state.global.mode);
@@ -35,6 +36,7 @@ export const App = () => {
               <Route path="/daily" element={<Daily />} />
               <Route path="/monthly" element={<Montly />} />
               <Route path="/breakdown" element={<Breakdown />} />
+              <Route path="/admin" element={<Admin />} />
             </Route>
           </Routes>
         </ThemeProvider>
